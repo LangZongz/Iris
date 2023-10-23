@@ -5,7 +5,8 @@ on:
       - master
 jobs:
   build:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
     steps:
       - name: checkout repository
         uses: actions/checkout@v2
